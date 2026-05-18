@@ -186,6 +186,19 @@ img {
   border-top-right-radius: 4px;
 }
 
+/* クロージング（枠線スタイル） */
+.balloon-outline.left .balloon-body {
+  background-color: #FFFFFF;
+  color: #7A5852;
+  border: 2px solid #E8C3BF;
+}
+
+.balloon-outline.right .balloon-body {
+  background-color: #FFFFFF;
+  color: #4A4680;
+  border: 2px solid #B5B3D6;
+}
+
 /* --- 図解カード --- */
 .figure-card {
   background-color: #FAFAFA;
