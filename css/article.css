@@ -467,3 +467,162 @@ img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
+
+/* ==============================
+   第3回 進行ステージ
+   ============================== */
+
+/* --- ステージカード --- */
+.stage-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 24px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 20px 12px;
+}
+
+.stage-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E6F4EF;
+  color: #3D8870;
+  border: 1px solid #5FB89F;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stage-header h4 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #171717;
+}
+
+.stage-illust {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.stage-illust img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stage-body {
+  padding: 20px;
+}
+
+.stage-body ul {
+  font-size: 22px;
+  color: #171717;
+  line-height: 1.85;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.stage-body li {
+  margin-bottom: 10px;
+}
+
+.stage-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 進行の特徴カード --- */
+.feature-cards {
+  background-color: #E8E7F2;
+  border-radius: 14px;
+  padding: 18px 16px;
+  margin: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feature-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.feature-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1F1A5C;
+  margin-bottom: 8px;
+}
+
+.feature-card-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.85;
+  color: #171717;
+}
+
+/* --- チェックリスト --- */
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.checklist-item:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #E6F4EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  color: #3D8870;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.checklist-content {
+  flex: 1;
+}
+
+.checklist-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #171717;
+  margin-bottom: 6px;
+}
+
+.checklist-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.85;
+  color: #525252;
+}
