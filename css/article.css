@@ -70,6 +70,11 @@ img {
   padding: 48px 0 40px;
 }
 
+.article-title--large {
+  font-size: 42px;
+  font-weight: 900;
+}
+
 /* --- 中見出し (h2) --- */
 .section-heading {
   font-size: 27px;
@@ -338,4 +343,127 @@ img {
   font-weight: 400;
   line-height: 1.6;
   color: #525252;
+}
+
+/* ==============================
+   第2回 原因カード
+   ============================== */
+
+/* --- 原因カード --- */
+.cause-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 24px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.cause-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 20px 8px;
+}
+
+.cause-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #E8E7F2;
+  color: #1F1A5C;
+  border: 1px solid #2D287F;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cause-header h4 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #2D287F;
+}
+
+.cause-card .medical-term {
+  padding: 0 20px 12px;
+}
+
+.cause-illust {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.cause-illust img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cause-body {
+  padding: 20px;
+}
+
+.cause-body .description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #171717;
+}
+
+.cause-body .description + .description {
+  margin-top: 18px;
+}
+
+/* --- 環境要因 内訳カード --- */
+.env-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.env-detail {
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.env-detail-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1F1A5C;
+  margin-bottom: 6px;
+}
+
+.env-detail-text {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.85;
+  color: #171717;
+}
+
+/* --- まとめ概念図 --- */
+.summary-illust {
+  background-color: #FAFAFA;
+  border: 1px dashed #E5E5E5;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 24px 0;
+}
+
+.summary-illust img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
