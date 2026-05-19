@@ -826,3 +826,256 @@ img {
   line-height: 1.85;
   color: #171717;
 }
+
+/* ==============================
+   症状チェック記事
+   ============================== */
+
+/* --- 運動症状カード --- */
+.sym-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 24px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sym-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px 20px 14px;
+}
+
+.sym-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E6F4EF;
+  color: #3D8870;
+  border: 1px solid #5FB89F;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sym-card-titles {
+  flex: 1;
+}
+
+.sym-card-titles h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #171717;
+  margin: 0;
+}
+
+.sym-reading {
+  font-size: 14px;
+  color: #525252;
+  margin: 4px 0 0;
+}
+
+.sym-card-illust {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px dashed #E5E5E5;
+  border-bottom: 1px dashed #E5E5E5;
+}
+
+.sym-card-illust img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sym-card-body {
+  padding: 18px 20px 20px;
+}
+
+.sym-card-body ul {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.sym-card-body li {
+  margin-bottom: 8px;
+}
+
+.sym-card-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 初期サイン グループイラスト --- */
+.sign-group-illust {
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 0 0 18px;
+}
+
+.sign-group-illust img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* --- 初期サイン 項目カード --- */
+.sign-item-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 0 0 10px;
+}
+
+.sign-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px;
+}
+
+.sign-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2D287F;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.sign-item-header h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  color: #171717;
+  line-height: 1.5;
+}
+
+.sign-item-card ul {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.sign-item-card li {
+  margin-bottom: 6px;
+}
+
+.sign-item-card li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 非運動症状カード --- */
+.nonmotor-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.nonmotor-icon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #2D287F;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+.nonmotor-content {
+  flex: 1;
+}
+
+.nonmotor-content h3 {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0 0 6px;
+  color: #171717;
+  line-height: 1.5;
+}
+
+.nonmotor-content p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* --- まとめグループカード(入れ子) --- */
+.summary-group-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.summary-group-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #1F1A5C;
+}
+
+.summary-group-card ul {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.summary-group-card li {
+  margin-bottom: 4px;
+}
+
+.summary-group-card li:last-child {
+  margin-bottom: 0;
+}
+
+.summary-group-card > p:not(.summary-group-title) {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* --- 強調メッセージボックス --- */
+.emphasis-box {
+  background-color: #FBEEEC;
+  border: 1px solid #E8857B;
+  border-radius: 14px;
+  padding: 18px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.emphasis-box p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #A85850;
+  line-height: 1.85;
+  margin: 0;
+}
