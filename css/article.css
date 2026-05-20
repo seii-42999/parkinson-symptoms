@@ -1371,3 +1371,250 @@ img {
   margin: 0;
   flex: 1;
 }
+
+/* ==============================
+   診察記事（examination）
+   ============================== */
+
+/* --- アコーディオン --- */
+.accordion-hint-text {
+  font-size: 14px;
+  color: #525252;
+  margin: 12px 0 20px;
+}
+
+.accordion-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.accordion-item.open {
+  border-color: #2D287F;
+}
+
+.accordion-header {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #FAFAFA;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.accordion-item.open .accordion-header {
+  background-color: #E8E7F2;
+}
+
+.accordion-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accordion-number {
+  font-size: 13px;
+  color: #525252;
+  font-weight: 500;
+}
+
+.accordion-item.open .accordion-number {
+  color: #1F1A5C;
+}
+
+.accordion-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.4;
+}
+
+.accordion-item.open .accordion-title {
+  color: #1F1A5C;
+}
+
+.accordion-sub {
+  font-size: 12px;
+  color: #A3A3A3;
+  display: block;
+  margin-top: 2px;
+}
+
+.accordion-chevron {
+  flex-shrink: 0;
+  color: #525252;
+  transition: transform 0.25s ease;
+}
+
+.accordion-item.open .accordion-chevron {
+  color: #1F1A5C;
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 14px 18px;
+  border-top: 1px solid #E8E7F2;
+}
+
+.accordion-item.open .accordion-content {
+  display: block;
+}
+
+.accordion-content ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.accordion-content li {
+  margin-bottom: 4px;
+}
+
+.accordion-content li:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-supplement {
+  font-size: 14px;
+  font-weight: 500;
+  color: #525252;
+  line-height: 1.85;
+  margin: 12px 0 0;
+  padding: 12px 14px;
+  background-color: #FAFAFA;
+  border-radius: 8px;
+}
+
+/* --- 準備カード --- */
+.prep-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  margin: 14px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.prep-card-inner {
+  padding: 18px 20px;
+}
+
+.prep-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.prep-card-icon {
+  flex-shrink: 0;
+  color: #2D287F;
+  line-height: 1;
+}
+
+.prep-card-head p {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  color: #1F1A5C;
+}
+
+.prep-card-body {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0 0 14px;
+}
+
+.prep-checklist {
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 4px 14px;
+}
+
+.prep-checklist-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.prep-checklist-row:last-child {
+  border-bottom: none;
+}
+
+.prep-check-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #E6F4EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3D8870;
+  line-height: 1;
+}
+
+.prep-checklist-row p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.8;
+  margin: 0;
+  flex: 1;
+}
+
+.prep-example {
+  background-color: #FBEEEC;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.prep-example p {
+  font-size: 14px;
+  color: #A85850;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* --- ステップアイテム --- */
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 8px 0;
+}
+
+.step-badge {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #E8E7F2;
+  color: #1F1A5C;
+  border: 1px solid #2D287F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.step-text {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 6px 0 0;
+  color: #171717;
+}
