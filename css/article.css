@@ -1216,14 +1216,45 @@ img {
   margin: 0 0 0 28px;
 }
 
+/* --- 受診タイミングカード（白地＋左ボーダー） --- */
+.timing-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timing-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border-left: 4px solid #2D287F;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.timing-card-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1F1A5C;
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+
+.timing-card-example {
+  font-size: 14px;
+  font-weight: 400;
+  color: #525252;
+  line-height: 1.7;
+  margin: 0;
+}
+
 /* --- 神経内科の説明ブロック --- */
 .hospital-info {
-  background-color: #E8E7F2;
-  border: 1px solid #D0CFE5;
+  border: 2px solid #2D287F;
   border-radius: 14px;
-  padding: 18px 20px;
+  background-color: #FFFFFF;
+  padding: 20px;
   margin: 24px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(45, 40, 127, 0.1);
 }
 
 .hospital-head {
