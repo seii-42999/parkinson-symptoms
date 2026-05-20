@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>パーキンソン病チェックリスト</title>
+  <link rel="stylesheet" href="css/article.css?v=20260520d">
+</head>
+<body>
+  <main class="article-container">
+
+    <!-- ⓪ ヒーロー画像 -->
+    <header>
+      <div class="hero-image">
+        <img src="images/hero_symptoms.png" alt="症状が気になる方へ ヒーロー画像">
+      </div>
+    </header>
+
+    <!-- ① 記事タイトル -->
+    <h1 class="article-title article-title--large">パーキンソン病<br>チェックリスト</h1>
+
+    <!-- ② 導入本文 -->
+    <section aria-label="導入">
+      <p class="body-text">以下の症状が3つ以上当てはまる場合は、神経内科の受診をおすすめします。</p>
+      <p class="cl-note">(※あくまでも受診の目安、としてお考え下さい)</p>
+    </section>
+
+    <!-- ③ チェックリスト本体 -->
+    <section aria-label="チェックリスト">
+
+      <!-- カウンター -->
+      <div class="cl-counter">
+        <div>
+          <p class="cl-counter-label">現在のチェック数</p>
+          <p class="cl-counter-value"><span id="js-count">0</span> / 15</p>
+        </div>
+        <button class="cl-reset-btn" id="js-reset" type="button">リセット</button>
+      </div>
+
+      <!-- 15項目（スクロールエリア） -->
+      <div id="js-checklist" class="cl-scroll-area">
+
+        <div class="cl-item" data-index="1">
+          <p class="cl-item-number">1.</p>
+          <p class="cl-item-text">じっとしているときに手や足が震えることがある</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="2">
+          <p class="cl-item-number">2.</p>
+          <p class="cl-item-text">歩幅が狭くなり、足をすりながら歩くことがある</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="3">
+          <p class="cl-item-number">3.</p>
+          <p class="cl-item-text">方向転換がスムーズにできなくなった(体を大きく回して向きを変える)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="4">
+          <p class="cl-item-number">4.</p>
+          <p class="cl-item-text">歩いていると片側の腕があまり振れない</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="5">
+          <p class="cl-item-number">5.</p>
+          <p class="cl-item-text">最近、字が小さくなった(小字症)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="6">
+          <p class="cl-item-number">6.</p>
+          <p class="cl-item-text">動作が遅くなったと感じる(着替え、食事、歯磨きなど)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="7">
+          <p class="cl-item-number">7.</p>
+          <p class="cl-item-text">表情が乏しくなった(家族から「無表情になったね」と言われる)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="8">
+          <p class="cl-item-number">8.</p>
+          <p class="cl-item-text">声が小さくなり、聞き取りにくくなった</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="9">
+          <p class="cl-item-number">9.</p>
+          <p class="cl-item-text">転びそうになる、バランスを崩しやすい</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="10">
+          <p class="cl-item-number">10.</p>
+          <p class="cl-item-text">コーヒーやカレーなどにおいを感じにくくなった</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="11">
+          <p class="cl-item-number">11.</p>
+          <p class="cl-item-text">便秘が長く続いている(食事に気をつけても改善しない)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="12">
+          <p class="cl-item-number">12.</p>
+          <p class="cl-item-text">寝ている間に大声を出したり、手足を動かす(レム睡眠行動障害)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="13">
+          <p class="cl-item-number">13.</p>
+          <p class="cl-item-text">気分が落ち込みやすくなった(以前よりも意欲が低下)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="14">
+          <p class="cl-item-number">14.</p>
+          <p class="cl-item-text">疲れやすくなった(倦怠感が長く続く)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+        <div class="cl-item" data-index="15">
+          <p class="cl-item-number">15.</p>
+          <p class="cl-item-text">立ちくらみやめまいを感じる(血圧の変動)</p>
+          <div class="cl-btn-group">
+            <button class="cl-btn cl-btn-yes" type="button" data-answer="yes">はい</button>
+            <button class="cl-btn cl-btn-no" type="button" data-answer="no">いいえ</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 結果判定エリア（カウンターと同じレイヤー） -->
+      <div class="result-panel" id="js-result">
+        <p class="result-count">該当項目は <span id="js-result-count">0</span> 個でした</p>
+        <p class="result-message" id="js-result-message">気になる症状があれば、いつでも医療機関にご相談ください。</p>
+      </div>
+    </section>
+
+    <!-- ⑤ 受診のポイント -->
+    <section aria-label="受診のポイント">
+      <h2 class="section-heading">受診のポイント</h2>
+
+      <!-- ⑥ 3つのポイント -->
+      <div class="summary-checklist">
+        <div class="summary-check-item">
+          <div class="check-icon">&#x2713;</div>
+          <p>「震えがないから違う」とは限りません!</p>
+        </div>
+        <div class="summary-check-item">
+          <div class="check-icon">&#x2713;</div>
+          <p>運動症状だけでなく、非運動症状(嗅覚低下・便秘・睡眠障害)も重要なサインです。</p>
+        </div>
+        <div class="summary-check-item">
+          <div class="check-icon">&#x2713;</div>
+          <p>半年以上続いている場合は、特に注意が必要。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑦ クロージング -->
+    <section aria-label="まとめ">
+
+      <!-- 先生 -->
+      <div class="balloon-wrapper right balloon-outline">
+        <div class="balloon-icon">
+          <img src="images/char_sensei.png" alt="先生（専門医）">
+        </div>
+        <div class="balloon-body">
+          チェックリストの結果が気になる場合は、早めに神経内科を受診しましょう。診察の際に、このチェックリストを持参すると、医師に症状を伝えやすくなります。
+        </div>
+      </div>
+
+      <!-- ハルカ -->
+      <div class="balloon-wrapper left balloon-outline">
+        <div class="balloon-icon">
+          <img src="images/char_haruka.png" alt="ハルカ（理学療法士）">
+        </div>
+        <div class="balloon-body">
+          気になることが一つでもあれば、自分の体のサインに耳を傾けてみてくださいね。早めの相談が、安心への第一歩です。
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑧ 監修者情報 -->
+    <footer>
+      <div class="supervisor-box">
+        <p>監修：大阪大学大学院医学系研究科 神経内科学講座 池中建介 先生</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    (function() {
+      var answers = {};
+      var countEl = document.getElementById('js-count');
+      var resultCountEl = document.getElementById('js-result-count');
+      var resultMessageEl = document.getElementById('js-result-message');
+      var resultPanel = document.getElementById('js-result');
+
+      function getYesCount() {
+        var count = 0;
+        for (var key in answers) {
+          if (answers[key] === 'yes') count++;
+        }
+        return count;
+      }
+
+      function updateResult() {
+        var count = getYesCount();
+        countEl.textContent = count;
+        resultCountEl.textContent = count;
+
+        // Remove all state classes
+        resultPanel.className = 'result-panel';
+
+        if (count >= 7) {
+          resultPanel.classList.add('result-salmon');
+          resultMessageEl.innerHTML = '<span class="result-label">判定の目安</span>早めの診察が必要';
+        } else if (count >= 5) {
+          resultPanel.classList.add('result-blue');
+          resultMessageEl.innerHTML = '<span class="result-label">判定の目安</span>受診を推奨';
+        } else if (count >= 3) {
+          resultPanel.classList.add('result-mint');
+          resultMessageEl.innerHTML = '<span class="result-label">判定の目安</span>神経内科の受診を検討';
+        } else {
+          resultPanel.classList.add('result-neutral');
+          resultMessageEl.textContent = '気になる症状があれば、いつでも医療機関にご相談ください。';
+        }
+      }
+
+      // Button click handler
+      document.getElementById('js-checklist').addEventListener('click', function(e) {
+        var btn = e.target.closest('.cl-btn');
+        if (!btn) return;
+
+        var item = btn.closest('.cl-item');
+        var index = item.getAttribute('data-index');
+        var answer = btn.getAttribute('data-answer');
+
+        // Toggle: if same answer clicked again, deselect
+        if (answers[index] === answer) {
+          delete answers[index];
+          item.className = 'cl-item';
+        } else {
+          answers[index] = answer;
+          item.className = 'cl-item selected-' + answer;
+        }
+
+        // Update button states
+        var buttons = item.querySelectorAll('.cl-btn');
+        buttons.forEach(function(b) {
+          b.classList.remove('active');
+        });
+        if (answers[index]) {
+          btn.classList.add('active');
+        }
+
+        updateResult();
+      });
+
+      // Reset
+      document.getElementById('js-reset').addEventListener('click', function() {
+        answers = {};
+        var items = document.querySelectorAll('.cl-item');
+        items.forEach(function(item) {
+          item.className = 'cl-item';
+          item.querySelectorAll('.cl-btn').forEach(function(b) {
+            b.classList.remove('active');
+          });
+        });
+        updateResult();
+      });
+
+      // Initial state
+      updateResult();
+    })();
+  </script>
+</body>
+</html>

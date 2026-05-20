@@ -1618,3 +1618,214 @@ img {
   margin: 6px 0 0;
   color: #171717;
 }
+
+/* ==============================
+   チェックリスト記事（checklist）
+   ============================== */
+
+/* --- 注記テキスト --- */
+.cl-note {
+  font-size: 14px;
+  color: #525252;
+  line-height: 1.85;
+  margin: -12px 0 24px;
+}
+
+/* --- カウンターバー --- */
+.cl-counter {
+  background-color: #E8E7F2;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 0 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- スクロールコンテナ --- */
+.cl-scroll-area {
+  max-height: 420px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 0 14px;
+  padding-right: 4px;
+}
+
+.cl-counter-label {
+  font-size: 12px;
+  color: #525252;
+  margin: 0 0 2px;
+}
+
+.cl-counter-value {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0;
+}
+
+.cl-counter-value span {
+  font-size: 32px;
+}
+
+.cl-reset-btn {
+  background-color: #FFFFFF;
+  border: 1px solid #2D287F;
+  color: #1F1A5C;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-family: inherit;
+}
+
+/* --- チェックリスト項目 --- */
+.cl-item {
+  background-color: #FFFFFF;
+  border: 1.5px solid #E5E5E5;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 0 0 8px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.cl-item.selected-yes {
+  background-color: #E6F4EF;
+  border-color: #5FB89F;
+}
+
+.cl-item.selected-yes .cl-item-number {
+  color: #3D8870;
+}
+
+.cl-item.selected-no {
+  background-color: #FAFAFA;
+  border-color: #E5E5E5;
+}
+
+.cl-item.selected-no .cl-item-text {
+  color: #525252;
+}
+
+.cl-item-number {
+  font-size: 12px;
+  color: #A3A3A3;
+  margin: 0 0 8px;
+}
+
+.cl-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+/* --- はい/いいえ ボタン --- */
+.cl-btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.cl-btn {
+  flex: 1;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E5E5E5;
+  color: #525252;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-family: inherit;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.cl-btn-yes.active {
+  background-color: #5FB89F;
+  border-color: #5FB89F;
+  color: #FFFFFF;
+}
+
+.cl-btn-no.active {
+  background-color: #525252;
+  border-color: #525252;
+  color: #FFFFFF;
+}
+
+/* --- 結果判定パネル --- */
+.result-panel {
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-align: center;
+  margin: 24px 0;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.result-panel.result-neutral {
+  background-color: #FAFAFA;
+  border: 1px solid #E5E5E5;
+}
+
+.result-panel.result-mint {
+  background-color: #E6F4EF;
+  border: 1.5px solid #5FB89F;
+}
+
+.result-panel.result-blue {
+  background-color: #E8E7F2;
+  border: 1.5px solid #2D287F;
+}
+
+.result-panel.result-salmon {
+  background-color: #FBEEEC;
+  border: 1.5px solid #E8857B;
+}
+
+.result-count {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.result-neutral .result-count { color: #525252; }
+.result-neutral .result-count span { color: #1F1A5C; font-size: 32px; }
+.result-mint .result-count { color: #3D8870; }
+.result-mint .result-count span { color: #3D8870; font-size: 32px; }
+.result-blue .result-count { color: #1F1A5C; }
+.result-blue .result-count span { color: #1F1A5C; font-size: 32px; }
+.result-salmon .result-count { color: #A85850; }
+.result-salmon .result-count span { color: #A85850; font-size: 32px; }
+
+.result-message {
+  font-size: 14px;
+  color: #525252;
+  line-height: 1.85;
+  margin: 0;
+}
+
+.result-mint .result-message,
+.result-blue .result-message,
+.result-salmon .result-message {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 12px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.result-mint .result-message { color: #3D8870; }
+.result-blue .result-message { color: #1F1A5C; }
+.result-salmon .result-message { color: #A85850; }
+
+.result-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
