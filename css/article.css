@@ -1829,3 +1829,236 @@ img {
   font-weight: 500;
   margin: 0 0 6px;
 }
+
+/* ==============================
+   診断検査記事（diagnosis-tests）
+   ============================== */
+
+/* --- 中見出しサブタイトル --- */
+.section-heading-sub {
+  font-size: 17px;
+  font-weight: 400;
+  color: #525252;
+  display: block;
+  margin-top: 4px;
+}
+
+/* --- 検査カード（アイコン＋チェックリスト） --- */
+.test-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 18px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.test-card-inner {
+  padding: 18px 20px;
+}
+
+.test-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.test-card-icon {
+  flex-shrink: 0;
+  color: #2D287F;
+  line-height: 1;
+}
+
+.test-card-head p {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  color: #1F1A5C;
+  line-height: 1.4;
+}
+
+.test-checklist {
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 4px 14px;
+}
+
+.test-check-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.test-check-row:last-child {
+  border-bottom: none;
+}
+
+.test-check-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #E6F4EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3D8870;
+  line-height: 1;
+}
+
+.test-check-row p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.8;
+  margin: 0;
+  flex: 1;
+}
+
+.test-card-list {
+  font-size: 16px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.test-card-list li {
+  margin-bottom: 6px;
+}
+
+.test-card-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 画像検査カードタイトル --- */
+.imaging-title {
+  padding: 18px 20px 14px;
+}
+
+.imaging-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imaging-title-icon {
+  flex-shrink: 0;
+  color: #2D287F;
+  line-height: 1;
+}
+
+.imaging-title-row p {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0;
+  color: #1F1A5C;
+  line-height: 1.4;
+}
+
+.imaging-sub {
+  font-size: 14px;
+  color: #525252;
+  display: block;
+  margin-top: 2px;
+}
+
+/* --- PET検査（補足扱い） --- */
+.pet-box {
+  background-color: #FAFAFA;
+  border: 1px solid #E5E5E5;
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 18px 0;
+}
+
+.pet-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px;
+}
+
+.pet-icon {
+  flex-shrink: 0;
+  color: #525252;
+  line-height: 1;
+}
+
+.pet-head p {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+  color: #171717;
+}
+
+.pet-sub {
+  font-size: 13px;
+  color: #A3A3A3;
+  margin-left: 6px;
+}
+
+.pet-body {
+  font-size: 15px;
+  font-weight: 500;
+  color: #525252;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* --- 鑑別疾患カード --- */
+.disease-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.disease-card-header {
+  background-color: #E8E7F2;
+  padding: 12px 16px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.disease-card-header p {
+  font-size: 17px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.disease-abbr {
+  font-size: 13px;
+  color: #525252;
+  display: block;
+}
+
+.disease-card-body {
+  padding: 14px 16px;
+}
+
+.disease-card-body p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* --- まとめチェックリストラベル --- */
+.summary-checklist-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0 0 10px;
+  padding: 0 4px;
+}
