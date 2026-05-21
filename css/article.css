@@ -2177,3 +2177,252 @@ img {
   margin: 0;
   flex: 1;
 }
+
+/* --- 神経内科メインカード（濃色背景） --- */
+.dept-main-card {
+  background-color: #2D287F;
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin: 18px 0;
+}
+
+.dept-main-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #B8B5DC;
+  margin: 0 0 6px;
+  letter-spacing: 0.05em;
+}
+
+.dept-main-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+
+.dept-main-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.dept-main-sub {
+  font-size: 16px;
+  font-weight: 500;
+  color: #B8B5DC;
+  margin: 4px 0 0;
+}
+
+.dept-main-body {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.dept-main-body ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.dept-main-body li {
+  margin-bottom: 6px;
+}
+
+.dept-main-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- サブカテゴリ見出し --- */
+.sub-section-heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 24px 0 14px;
+  padding: 0;
+}
+
+/* --- 診療科サブカード --- */
+.dept-sub-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dept-sub-card-inner {
+  padding: 16px 18px;
+}
+
+.dept-sub-card-head {
+  margin: 0 0 10px;
+}
+
+.dept-sub-card-head h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #1F1A5C;
+}
+
+.dept-sub-note {
+  font-size: 14px;
+  font-weight: 500;
+  color: #525252;
+  margin: 4px 0 0;
+}
+
+.dept-sub-card-body ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.dept-sub-card-body li {
+  margin-bottom: 4px;
+}
+
+.dept-sub-card-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 症状チェックリスト --- */
+.symptom-checklist-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  margin: 18px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.symptom-checklist-inner {
+  padding: 14px 18px;
+}
+
+.symptom-checklist-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.symptom-checklist-row:last-child {
+  border-bottom: none;
+}
+
+.symptom-checklist-row svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.symptom-checklist-row p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.8;
+  margin: 0;
+  flex: 1;
+}
+
+/* --- 受診の流れフロー --- */
+.flow-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.flow-step-badge {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #E8E7F2;
+  color: #1F1A5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid #2D287F;
+  margin-top: 4px;
+}
+
+.flow-step-content {
+  flex: 1;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.step-main {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+  color: #1F1A5C;
+  line-height: 1.5;
+}
+
+.step-sub {
+  font-size: 14px;
+  color: #525252;
+  line-height: 1.85;
+  margin: 6px 0 0;
+}
+
+.flow-arrow {
+  text-align: center;
+  padding: 0 0 8px;
+}
+
+/* --- 補足ボックス（info） --- */
+.info-box {
+  background-color: #FBEEEC;
+  border: 1px solid #E8857B;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 18px 0;
+}
+
+.info-box-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.info-box-row svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-box-content {
+  flex: 1;
+}
+
+.info-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #A85850;
+  line-height: 1.85;
+  margin: 0 0 6px;
+}
+
+.info-body {
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.85;
+  margin: 0;
+}
