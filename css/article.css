@@ -2426,3 +2426,288 @@ img {
   line-height: 1.85;
   margin: 0;
 }
+
+/* ==============================
+   診断プロセス記事（diagnosis-process）
+   ============================== */
+
+/* --- プロセス概要図 --- */
+.process-overview {
+  background-color: #E8E7F2;
+  border-radius: 14px;
+  padding: 20px 18px;
+  margin: 18px 0;
+}
+
+.process-overview-title {
+  font-size: 13px;
+  color: #1F1A5C;
+  font-weight: 500;
+  margin: 0 0 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.process-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+.process-step.goal {
+  background-color: #2D287F;
+}
+
+.process-step-badge {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #2D287F;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.process-step.goal .process-step-badge {
+  background-color: #FFFFFF;
+  color: #1F1A5C;
+}
+
+.process-step-content {
+  flex: 1;
+}
+
+.process-step-content .main {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.process-step.goal .process-step-content .main {
+  color: #FFFFFF;
+}
+
+.process-step-content .sub {
+  font-size: 12px;
+  color: #525252;
+  margin: 2px 0 0;
+}
+
+.process-step.goal .process-step-content .sub {
+  color: #B8B5DC;
+}
+
+.process-arrow {
+  text-align: center;
+  padding: 4px 0;
+  font-size: 16px;
+  color: #2D287F;
+  font-weight: 500;
+}
+
+.process-overview-note {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #525252;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* --- チェックリスト行（アイコンなし） --- */
+.test-checklist-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.test-checklist-row:last-child {
+  border-bottom: none;
+}
+
+.test-checklist-row p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* --- 神経診察導入文 --- */
+.neuro-intro {
+  font-size: 14px;
+  color: #525252;
+  line-height: 1.85;
+  margin: 0 0 14px;
+}
+
+/* --- 神経診察項目リスト --- */
+.neuro-list {
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  padding: 4px 14px;
+}
+
+/* --- 神経診察項目（2段構造） --- */
+.neuro-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.neuro-item:last-child {
+  border-bottom: none;
+}
+
+.neuro-item .neuro-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0 0 4px;
+}
+
+.neuro-item .neuro-desc {
+  font-size: 14px;
+  color: #525252;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- 確定診断ポイント（阪大ブルー2px太枠） --- */
+.diagnosis-criteria {
+  border: 2px solid #2D287F;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  margin: 18px 0;
+}
+
+.diagnosis-criteria-header {
+  background-color: #E8E7F2;
+  padding: 14px 18px;
+  border-bottom: 1px solid #2D287F;
+}
+
+.diagnosis-criteria-header p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0;
+}
+
+.diagnosis-criteria-body {
+  padding: 8px 18px;
+}
+
+.diagnosis-criteria-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #E8E7F2;
+}
+
+.diagnosis-criteria-item:last-child {
+  border-bottom: none;
+}
+
+.diagnosis-criteria-item .crit-main {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.7;
+  margin: 0 0 4px;
+}
+
+.diagnosis-criteria-item .crit-sub {
+  font-size: 13px;
+  color: #525252;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- 期間ブロック（白地+阪大ブルー3px太枠） --- */
+.duration-block {
+  background-color: #FFFFFF;
+  border: 3px solid #2D287F;
+  border-radius: 14px;
+  padding: 24px 20px;
+  text-align: center;
+  margin: 18px 0;
+}
+
+.duration-block-label {
+  font-size: 13px;
+  color: #1F1A5C;
+  font-weight: 500;
+  margin: 0 0 8px;
+  letter-spacing: 0.05em;
+}
+
+.duration-block-time {
+  font-size: 50px;
+  font-weight: 500;
+  color: #1F1A5C;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.duration-block-time .num {
+  font-size: 62px;
+}
+
+.duration-block-time .sep {
+  font-size: 22px;
+  margin: 0 4px;
+}
+
+.duration-block-time .unit {
+  font-size: 22px;
+  margin-left: 6px;
+}
+
+.duration-block-note {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 500;
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
+/* --- 補足ボックス（グレー） --- */
+.info-box-gray {
+  background-color: #FAFAFA;
+  border: 1px solid #E5E5E5;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 14px 0;
+}
+
+.info-box-gray ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.info-box-gray li {
+  margin-bottom: 4px;
+}
+
+.info-box-gray li:last-child {
+  margin-bottom: 0;
+}
