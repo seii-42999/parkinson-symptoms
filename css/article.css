@@ -2062,3 +2062,118 @@ img {
   margin: 0 0 10px;
   padding: 0 4px;
 }
+
+/* --- 理由カード（MRI-CT記事） --- */
+.reason-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.reason-card-inner {
+  padding: 18px 20px;
+}
+
+.reason-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+
+.reason-card-head svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.reason-card-head p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #1F1A5C;
+  line-height: 1.4;
+}
+
+.reason-card-body ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.9;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.reason-card-body li {
+  margin-bottom: 4px;
+}
+
+.reason-card-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* --- 除外診断キーメッセージ --- */
+.key-message-box {
+  background-color: #E6F4EF;
+  border-left: 4px solid #5FB89F;
+  border-radius: 0 10px 10px 0;
+  padding: 14px 16px;
+  margin: 18px 0;
+}
+
+.key-message-box p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* --- MRI/CT特徴ラベル（疾患カード内） --- */
+.feature-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #A3A3A3;
+  margin: 0 0 6px;
+  letter-spacing: 0.05em;
+}
+
+/* --- まとめ入れ子カード --- */
+.summary-outer {
+  background-color: #E8E7F2;
+  border-radius: 14px;
+  padding: 16px 14px;
+  margin: 18px 0;
+}
+
+.summary-inner {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+}
+
+.summary-inner:last-child {
+  margin-bottom: 0;
+}
+
+.summary-inner-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.summary-inner-row svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.summary-inner-row p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 1.85;
+  margin: 0;
+  flex: 1;
+}
